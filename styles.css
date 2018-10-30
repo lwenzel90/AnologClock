@@ -1,0 +1,25 @@
+.clock{
+    width: 400px;
+    height: 400px;
+    background: rgb(103, 182, 255);
+    border: 10px rgb(0, 36, 70) solid;
+    border-radius: 100%;
+}
+
+.hand-rotate{
+    transform: rotate(360deg);
+}
+
+.hand {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 180px 5px; /* 200px is the line height */
+    border-color: transparent transparent rgb(0, 132, 255) transparent;
+    transform-origin: 5px 175px;
+    transition: all .1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    top: 0;
+}
+  
